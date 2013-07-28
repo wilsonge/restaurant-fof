@@ -9,7 +9,8 @@
 <form
 	validate="true"
 >
-	<fieldset name="basic_configuration"
+	<fieldset
+		name="basic_configuration"
 		label="COM_REVIEWS_ITEMS_GROUP_BASIC"
 		description="COM_REVIEWS_ITEMS_GROUP_BASIC_DESC"
 		class="span4"
