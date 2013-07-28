@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+	@copyright (C) 2013 JoomJunk. All rights reserved.
+	@package    Restaurant Reviews
+	@license    http://www.gnu.org/licenses/gpl-3.0.html
+
+	Restaurants view form file
+-->
 <metadata>
 	<!-- View definition -->
 	<view>
@@ -8,4 +15,17 @@
 			<default name="COM_REVIEWS_VIEW_ITEM_TITLE" />
 		</options>
 	</view>
+	<fields name="request">
+		<fieldset name="request">
+				<field
+						name="id"
+						type="sql"
+						query="SELECT reviews_restaurant_id, name FROM #__reviews_restaurants" key_field="reviews_restaurant_id" value_field="name"
+						label="COM_REVIEWS_FIELD_ID"
+						description="COM_REVIEWS_FIELD_ID_DESC"
+						required="true"
+						default="1"
+				/>
+		</fieldset>
+	</fields>
 </metadata>
