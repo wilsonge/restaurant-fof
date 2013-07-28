@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+	<name>COM_REVIEWS</name>
+	<author>JoomJunk</author>
+	<creationDate>27th Jul 2013</creationDate>
+	<copyright>Copyright (C) 2013 JoomJunk</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>admin@joomjunk.co.uk</authorEmail>
+	<authorUrl>http://www.joomjunk.co.uk</authorUrl>
+	<version>1.0.0</version>
+
+	<install> <!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install/mysql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall> <!-- Runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install/mysql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<update> <!-- Runs on update -->
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+	
+	<files folder="site">
+		<folder>views</folder>
+		<filename>index.html</filename>
+		<filename>reviews.php</filename>
+	</files>
+
+	<administration>
+		<menu>COM_REVIEWS</menu>
+		<files folder="admin">
+			<!-- Admin Main Files -->
+			<folder>sql</folder>
+			<folder>views</folder>
+			<filename>index.html</filename>
+			<filename>reviews.php</filename>
+			<filename>dispatcher.php</filename>
+		</files>
+		<languages folder="admin">
+				<language tag="en-GB">language/en-GB/en-GB.com_reviews.ini</language>
+				<language tag="en-GB">language/en-GB/en-GB.com_reviews.sys.ini</language>
+		</languages>
+	</administration>
+</extension>

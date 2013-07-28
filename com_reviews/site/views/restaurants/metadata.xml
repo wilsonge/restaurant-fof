@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<!-- View definition -->
+	<view>
+		<!-- Layout options -->
+		<options>
+			<!-- Default layout's name -->
+			<default name="COM_REVIEWS_VIEW_ITEMS_TITLE" />
+		</options>
+	</view>
+</metadata>

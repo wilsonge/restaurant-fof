@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	@copyright (C) 2013 JoomJunk. All rights reserved.
+	@package    Restaurant Reviews
+	@license    http://www.gnu.org/licenses/gpl-3.0.html
+
+	Restaurants view form file
+-->
+<form
+	type="browse"
+	show_header="1"
+	show_filters="1"
+	show_pagination="1"
+	norows_placeholder="COM_RESTAURANTS_COMMON_NORECORDS"
+>
+	<headerset>
+		<header
+			name="name"
+			type="fieldsearchable"
+			sortable="false"
+			buttons="false"
+		/>
+		<header
+			name="city"
+			type="field"
+			sortable="true"
+			tdwidth="20%"
+		/>
+	</headerset>
+
+	<fieldset name="items">
+		<field name="name" type="text"
+			show_link="true"
+			url="index.php?option=com_reviews&amp;view=restaurant&amp;id=[ITEM:ID]"
+			empty_replacement="(no title)"
+		 />
+
+		<field name="city" type="field" />
+	</fieldset>
+</form>
