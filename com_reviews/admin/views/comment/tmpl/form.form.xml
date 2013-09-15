@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	@copyright (C) 2013 JoomJunk. All rights reserved.
+	@package    Restaurant Reviews
+	@license    http://www.gnu.org/licenses/gpl-3.0.html
+
+	Comments view form file
+-->
+<form
+	validate="true"
+>
+	<fieldset
+            name="basic_configuration"
+            label="COM_REVIEWS_ITEMS_GROUP_BASIC"
+            description="COM_REVIEWS_ITEMS_GROUP_BASIC_DESC"
+            class="span8"
+	>
+		<field
+			name="username"
+			type="user"
+			label="COM_REVIEW_COMMENTS_FIELD_USER_NAME"
+		 />
+
+		<field
+			name="date"
+			type="calendar"
+			default="now"
+            label="COM_REVIEW_COMMENTS_FIELD_DATE"
+			readonly="true"
+		/>
+
+		<field
+			name="comment"
+			type="editor"
+			label="COM_REVIEW_COMMENTS_FIELD_COMMENT"
+		 />
+
+        <field
+                name="restaurant"
+                type="sql"
+                label="COM_REVIEW_COMMENTS_FIELD_RESTAURANT"
+                query="SELECT reviews_restaurant_id, name FROM #__reviews_restaurants" key_field="reviews_restaurant_id" value_field="name"
+                default="1"
+                />
+	</fieldset>
+</form>

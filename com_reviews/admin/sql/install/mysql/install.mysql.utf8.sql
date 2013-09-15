@@ -19,4 +19,14 @@ CREATE TABLE IF NOT EXISTS `#__reviews_restaurants` (
   `atmosphererating` int(1) NOT NULL,
   `pricerating` int(1) NOT NULL,
    PRIMARY KEY  (`reviews_restaurant_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `#__reviews_comments` (
+  `reviews_comment_id` int(11) NOT NULL AUTO_INCREMENT,
+  `restaurant` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `date` DATETIME NOT NULL,
+  `username` int(11) NOT NULL,
+  `comment` TEXT NOT NULL,
+  PRIMARY KEY  (`reviews_comment_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;

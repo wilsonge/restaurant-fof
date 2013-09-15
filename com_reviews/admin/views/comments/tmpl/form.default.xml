@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	@copyright (C) 2013 JoomJunk. All rights reserved.
+	@package    Restaurant Reviews
+	@license    http://www.gnu.org/licenses/gpl-3.0.html
+
+	Comments view form file
+-->
+<form
+    type="browse"
+    show_header="1"
+    show_filters="1"
+    show_pagination="1"
+    norows_placeholder="COM_RESTAURANTS_COMMON_NO_COMMENTS"
+>
+    <headerset>
+        <header
+                name="reviews_comment_id"
+                label="COM_REVIEW_COMMENTS_FIELD_ID"
+                type="rowselect"
+                tdwidth="20"
+                />
+
+        <header
+                name="name"
+                type="fieldsearchable"
+                sortable="true"
+                buttons="true"
+                buttonclass="btn"
+                label="COM_REVIEW_COMMENTS_FIELD_USER_NAME"
+                />
+
+        <header
+                name="date"
+                type="field"
+                label="COM_REVIEW_COMMENTS_FIELD_DATE"
+                sortable="true"
+                />
+
+        <header
+                name="comment"
+                type="field"
+                label="COM_REVIEW_COMMENTS_FIELD_COMMENT"
+                sortable="false"
+                />
+
+        <header
+                name="restaurant"
+                type="field"
+                sortable="true"
+                label="COM_REVIEW_COMMENTS_FIELD_RESTAURANT"
+                />
+    </headerset>
+    <fieldset name="items" >
+        <field
+                name="reviews_comment_id"
+                type="selectrow"
+                />
+
+        <field
+			name="username"
+			type="user"
+		    />
+
+		 <field
+			name="date"
+			type="text"
+            />
+
+		<field
+			name="comment"
+			type="text"
+            show_link="true"
+            url="index.php?option=com_reviews&amp;view=comment&amp;id=[ITEM:ID]"
+            />
+
+        <field
+            name="restaurant"
+            type="text"
+            show_link="true"
+            url="index.php?option=com_reviews&amp;view=restaurant&amp;id=[ITEM:RESTAURANT]"
+            />
+	</fieldset>
+</form>
