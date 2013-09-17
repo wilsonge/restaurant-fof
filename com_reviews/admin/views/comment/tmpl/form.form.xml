@@ -10,10 +10,10 @@
 	validate="true"
 >
 	<fieldset
-            name="basic_configuration"
-            label="COM_REVIEWS_ITEMS_GROUP_BASIC"
-            description="COM_REVIEWS_ITEMS_GROUP_BASIC_DESC"
-            class="span8"
+        name="basic_configuration"
+        label="COM_REVIEWS_ITEMS_GROUP_BASIC"
+        description="COM_REVIEWS_ITEMS_GROUP_BASIC_DESC"
+        class="span8"
 	>
 		<field
 			name="username"
@@ -36,11 +36,11 @@
 		 />
 
         <field
-                name="restaurant"
-                type="sql"
-                label="COM_REVIEW_COMMENTS_FIELD_RESTAURANT"
-                query="SELECT reviews_restaurant_id, name FROM #__reviews_restaurants" key_field="reviews_restaurant_id" value_field="name"
-                default="1"
-                />
+            name="restaurant"
+            type="sql"
+            label="COM_REVIEW_COMMENTS_FIELD_RESTAURANT"
+            query="SELECT reviews_restaurant_id, name FROM #__reviews_restaurants" key_field="reviews_restaurant_id" value_field="name"
+            default="1"
+         />
 	</fieldset>
 </form>

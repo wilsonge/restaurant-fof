@@ -24,7 +24,6 @@ CREATE TABLE IF NOT EXISTS `#__reviews_restaurants` (
 CREATE TABLE IF NOT EXISTS `#__reviews_comments` (
   `reviews_comment_id` int(11) NOT NULL AUTO_INCREMENT,
   `restaurant` int(11) NOT NULL,
-  `name` varchar(255) NOT NULL,
   `date` DATETIME NOT NULL,
   `username` int(11) NOT NULL,
   `comment` TEXT NOT NULL,
