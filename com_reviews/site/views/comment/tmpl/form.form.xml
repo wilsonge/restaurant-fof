@@ -10,33 +10,37 @@
 	validate="true"
 >
 	<fieldset
-		name="comments"
-		class="form-vertical span8"
+        name="basic_configuration"
+        label="COM_REVIEWS_ITEMS_GROUP_BASIC"
+        description="COM_REVIEWS_ITEMS_GROUP_BASIC_DESC"
+        class="span8"
 	>
 		<field
-			name="name"
-			type="text"
-			label="COM_REVIEW_COMMENTS_NAME"
-			size="50"
+			name="username"
+			type="user"
+			label="COM_REVIEW_COMMENTS_FIELD_USER_NAME"
 		 />
 
-		 <field
+		<field
 			name="date"
 			type="calendar"
 			default="now"
-			size="50"
+            label="COM_REVIEW_COMMENTS_FIELD_DATE"
 			readonly="true"
-		 />
+		/>
 
 		<field
 			name="comment"
 			type="editor"
-			label="COM_REVIEW_COMMENTS_COMMENT"
+			label="COM_REVIEW_COMMENTS_FIELD_COMMENT"
 		 />
 
         <field
-                name="restaurant"
-                type="hidden"
-        />
+            name="restaurant"
+            type="sql"
+            label="COM_REVIEW_COMMENTS_FIELD_RESTAURANT"
+            query="SELECT reviews_restaurant_id, name FROM #__reviews_restaurants" key_field="reviews_restaurant_id" value_field="name"
+            default="1"
+         />
 	</fieldset>
 </form>
