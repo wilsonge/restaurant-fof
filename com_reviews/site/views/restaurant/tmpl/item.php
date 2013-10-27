@@ -8,3 +8,9 @@
 // Get the restaurant view from the XML file
 $viewTemplate = $this->getRenderedForm();
 echo $viewTemplate;
+
+// Get the comments view from the XML file
+$inputvars = array();
+$input = new FOFInput($inputvars);
+
+FOFDispatcher::getTmpInstance('com_reviews', 'comments', array('input' => $input))->dispatch();
