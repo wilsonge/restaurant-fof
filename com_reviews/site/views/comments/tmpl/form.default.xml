@@ -8,9 +8,9 @@
 -->
 <form
     type="browse"
-    show_header="1"
-    show_filters="1"
-    show_pagination="1"
+    show_header="0"
+    show_filters="0"
+    show_pagination="0"
     norows_placeholder="COM_RESTAURANTS_COMMON_NO_COMMENTS"
 >
     <headerset>

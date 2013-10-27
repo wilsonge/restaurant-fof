@@ -10,7 +10,11 @@ $viewTemplate = $this->getRenderedForm();
 echo $viewTemplate;
 
 // Get the comments view from the XML file
-$inputvars = array();
+$inputvars = array(
+	'show_filters' => false,
+	'show_pagination' => false,
+	'show_header' => false
+);
 $input = new FOFInput($inputvars);
 
 FOFDispatcher::getTmpInstance('com_reviews', 'comments', array('input' => $input))->dispatch();
