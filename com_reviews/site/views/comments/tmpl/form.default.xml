@@ -15,13 +15,6 @@
 >
     <headerset>
         <header
-                name="reviews_comment_id"
-                label="COM_REVIEW_COMMENTS_FIELD_ID"
-                type="rowselect"
-                tdwidth="20"
-                />
-
-        <header
                 name="name"
                 type="fieldsearchable"
                 sortable="true"
@@ -52,11 +45,6 @@
                 />
     </headerset>
     <fieldset name="items" >
-        <field
-                name="reviews_comment_id"
-                type="selectrow"
-                />
-
         <field
 			name="username"
 			type="user"
