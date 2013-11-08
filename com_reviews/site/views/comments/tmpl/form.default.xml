@@ -8,26 +8,21 @@
 -->
 <form
     type="browse"
-    show_header="0"
-    show_filters="0"
-    show_pagination="0"
     norows_placeholder="COM_RESTAURANTS_COMMON_NO_COMMENTS"
 >
     <headerset>
         <header
                 name="name"
-                type="fieldsearchable"
-                sortable="true"
-                buttons="true"
-                buttonclass="btn"
+                type="field"
                 label="COM_REVIEW_COMMENTS_FIELD_USER_NAME"
+                sortable="false"
                 />
 
         <header
                 name="date"
                 type="field"
                 label="COM_REVIEW_COMMENTS_FIELD_DATE"
-                sortable="true"
+                sortable="false"
                 />
 
         <header
@@ -35,13 +30,6 @@
                 type="field"
                 label="COM_REVIEW_COMMENTS_FIELD_COMMENT"
                 sortable="false"
-                />
-
-        <header
-                name="restaurant"
-                type="field"
-                sortable="true"
-                label="COM_REVIEW_COMMENTS_FIELD_RESTAURANT"
                 />
     </headerset>
     <fieldset name="items" >
@@ -60,11 +48,6 @@
 			type="text"
             show_link="true"
             url="index.php?option=com_reviews&amp;view=comment&amp;id=[ITEM:ID]"
-            />
-
-        <field
-            name="restaurant"
-            type="text"
             />
 	</fieldset>
 </form>
