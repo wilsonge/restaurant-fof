@@ -62,7 +62,7 @@ JHtml::_('script', 'system/html5fallback.js', false, true);
 	</div>
 	<div class="form-actions">
 		<button id="commentnow" class="btn btn-small btn-primary" type="submit">
-			<?php echo JText::_('COM_REVIEWS_SUBMIT')?>
+			<?php echo JText::_('COM_REVIEWS_COMMENT_SUBMIT')?>
 		</button>
 	</div>
 </form>
