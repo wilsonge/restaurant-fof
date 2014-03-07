@@ -27,6 +27,7 @@
 	
 	<files folder="site">
 		<folder>views</folder>
+		<folder>models</folder>
 		<filename>index.html</filename>
 		<filename>reviews.php</filename>
 	</files>
