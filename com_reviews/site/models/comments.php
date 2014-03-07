@@ -27,7 +27,7 @@ class ReviewsModelComments extends FOFModel
 
        	if ($config['input']->get('restaurantid', null))
 		{
-			$this->restaurant = $config['input']->get('restaurantid');
+			$this->restaurant = (int) $config['input']->get('restaurantid');
 		}
     }
 
