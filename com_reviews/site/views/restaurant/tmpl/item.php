@@ -9,7 +9,7 @@
 $viewTemplate = $this->getRenderedForm();
 echo $viewTemplate;
 
-// Get the comments view from the XML file
+// Get the restaurant ID and set it up for injection into the dispatcher
 $inputvars = array(
 	'restaurantid' => $this->config['input']->get('id'),
 );
