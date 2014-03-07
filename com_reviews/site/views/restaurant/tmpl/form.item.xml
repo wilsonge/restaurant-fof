@@ -20,6 +20,14 @@
 			size="50"
 		 />
 
+		 <field
+			name="tags"
+			type="tag"
+			label="JTAG"
+			class="inputbox"
+			multiple="true"
+		/>
+
 		<field
 			name="city"
 			type="text"

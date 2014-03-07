@@ -38,6 +38,7 @@
 			<!-- Admin Main Files -->
 			<folder>sql</folder>
 			<folder>views</folder>
+			<folder>tables</folder>
 			<filename>index.html</filename>
 			<filename>reviews.php</filename>
 			<filename>dispatcher.php</filename>

@@ -23,6 +23,16 @@
 		 />
 
 		<field
+			name="tags"
+			type="tag"
+			mode="ajax"
+			label="JTAG"
+			description="JTAG_DESC"
+			class="inputbox"
+			multiple="true"
+		/>
+
+		<field
 			name="enabled"
 			type="list"
 			label="JSTATUS"
