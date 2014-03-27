@@ -41,7 +41,9 @@
 			<folder>tables</folder>
 			<filename>index.html</filename>
 			<filename>reviews.php</filename>
+			<filename>toolbar.php</filename>
 			<filename>dispatcher.php</filename>
+			<filename>config.xml</filename>
 		</files>
 		<languages folder="admin">
 				<language tag="en-GB">language/en-GB/en-GB.com_reviews.ini</language>

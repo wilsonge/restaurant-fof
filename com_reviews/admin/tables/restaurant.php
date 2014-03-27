@@ -7,6 +7,8 @@
 
 defined('_JEXEC') or die();
 
+include_once JPATH_LIBRARIES.'/fof/include.php';
+
 class ReviewsTableRestaurant extends FOFTable
 {
 	/**
@@ -17,7 +19,7 @@ class ReviewsTableRestaurant extends FOFTable
 	public function __construct($table, $key, &$db, $config = array())
 	{
 		if (!isset($config['behaviors'])) {
-			$config['behaviors'] = array('tags');
+			$config['behaviors'] = array('tags', 'contenthistory');
 		}
 		else
 		{
