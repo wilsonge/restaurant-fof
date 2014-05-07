@@ -7,8 +7,6 @@
 
 defined('_JEXEC') or die();
 
-include_once JPATH_LIBRARIES.'/fof/include.php';
-
 class ReviewsTableRestaurant extends FOFTable
 {
 	/**
